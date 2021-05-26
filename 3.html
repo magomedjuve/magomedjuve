@@ -1,0 +1,28 @@
+<script>
+    var goods = [
+{    product: "pen",
+     price: 100
+},
+{    product: "pencil",
+     price: 198
+},
+{    product: "file",
+     price: 14
+},
+{    product: "paper",
+     price: 34
+}
+];
+        function countBasketPrice(goods) {
+        var countBasketPrice = 0;
+        for (var item of goods){
+            countBasketPrice = countBasketPrice + item.price;
+        }
+            return countBasketPrice;
+        }
+
+        alert("Сумма товаров: " + countBasketPrice(goods));
+   
+
+
+</script>

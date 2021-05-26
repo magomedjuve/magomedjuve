@@ -1,0 +1,25 @@
+<script>
+    var goods = [
+{    product: "pen",
+     price: 100
+},
+{    product: "pencil",
+     price: 198
+},
+{    product: "file",
+     price: 14
+},
+{    product: "paper",
+     price: 34
+}
+];
+var s = 0;
+for (var item of goods){
+    s= s + item.price;
+    console.log(item.product + " стоит " + item.price);
+}
+alert("Сумма товаров: " + s);
+
+
+
+</script>

@@ -1,0 +1,15 @@
+<script>
+
+    var nums = 0;
+    while (nums <=100) {
+        var check = true;
+        for (var i = 2; i < nums; i++){
+            if (nums%i==0) {
+                check = false;
+                break;
+            }
+        }
+        if (check) console.log(nums);
+        nums++;
+    }
+</script>
