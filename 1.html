@@ -1,15 +1,35 @@
 <script>
+    var arr = [' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 
-    var nums = 0;
-    while (nums <=100) {
-        var check = true;
-        for (var i = 2; i < nums; i++){
-            if (nums%i==0) {
-                check = false;
-                break;
-            }
+    document.write('<table style = "border-style : solid">');
+    for (var k = 1; k <= 8; k++) {   
+        document.write('<tr>');
+        if (k % 2 == 0) {
+            for (var i = 1; i <= 8; i++) {
+                if (i % 2 == 0) {
+                    document.write('<td style = "width : 30px; height : 30px; background-color : white"></td>');
+                } else {
+                    document.write('<td style = "width : 30px; height : 30px; background-color : black"></td>');
+                };
+            };
+        } else {
+            for (var i = 1; i <= 8; i++) {
+                if (i % 2 == 0) {
+                    document.write('<td style = "width : 30px; height : 30px; background-color : black"></td>');
+                } else {
+                    document.write('<td style = "width : 30px; height : 30px; background-color : white"></td>');
+                };
+            };
+            
         }
-        if (check) console.log(nums);
-        nums++;
+        document.write('<td style = "width : 30px; height : 30px; background-color : white">' + (9 - k) + '</td>');
+        document.write('</tr>');
+    };
+
+    for (var k = 1; k <= 8; k++) {
+
+        document.write('<td style = "width : 30px; height : 30px; background-color : white">' + arr[k] + '</td>');
     }
+
+    document.write('</table>');
 </script>
